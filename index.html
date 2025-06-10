@@ -1,66 +1,104 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>SOLQC</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #ffffff; }
-        header { background-color: #ffffff; padding: 20px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #ccc; }
-        header img { height: 60px; }
-        nav a { margin: 0 15px; text-decoration: none; color: #003366; font-weight: bold; }
-        .hero { background: #e8f0fa; padding: 60px 20px; text-align: center; }
-        .hero h2 { font-size: 2.5rem; color: #003366; margin-bottom: 10px; }
-        .hero p { font-size: 1.2rem; color: #444; margin-bottom: 20px; }
-        .hero a { background: #005599; padding: 12px 24px; color: white; border-radius: 8px; text-decoration: none; }
-        section.products { padding: 40px 20px; text-align: center; }
-        section.products h2 { font-size: 2rem; color: #003366; margin-bottom: 40px; }
-        .product { margin-bottom: 40px; }
-        .product img { max-width: 300px; width: 100%; margin-bottom: 10px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        footer { background: #003366; color: white; text-align: center; padding: 20px; margin-top: 60px; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SOLQC</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7f7f7;
+    }
+    header {
+      background: #0d2b66;
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      max-height: 80px;
+    }
+    nav {
+      background: #004080;
+      text-align: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      padding: 50px 20px;
+      text-align: center;
+      background: #eee;
+    }
+    .hero h1 {
+      margin-bottom: 10px;
+    }
+    .products {
+      padding: 30px 20px;
+      text-align: center;
+    }
+    .product {
+      margin: 20px auto;
+      max-width: 300px;
+    }
+    .product img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      display: block;
+      margin: 0 auto 10px;
+    }
+    footer {
+      background: #0d2b66;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-
-<header>
+  <header>
     <img src="logo.png" alt="SOLQC Logo">
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#products">Products</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
+  </header>
 
-<section class="hero" id="home">
-    <h2>Delivering Quality with Purpose</h2>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="hero">
+    <h1>Delivering Quality with Purpose</h1>
     <p>High-quality essentials for retail and wholesale across the U.S. and Mexico.</p>
-    <a href="#contact">Contact Us</a>
-</section>
+    <a href="mailto:info@solqc.com">
+      <button style="padding: 10px 20px; font-size: 16px;">Contact Us</button>
+    </a>
+  </div>
 
-<section class="products" id="products">
+  <div class="products">
     <h2>Our Products</h2>
+
     <div class="product">
-        <h3>Avocare - Avocado Oil</h3>
-        <img src="images/avocare.jpg" alt="Avocare Product">
-        <p>Premium avocado oil ideal for health-conscious consumers and foodservice.</p>
+      <h3>Avocare - Avocado Oil</h3>
+      <img src="avocare.jpg" alt="Avocare Product">
+      <p>Premium avocado oil ideal for health-conscious consumers and foodservice.</p>
     </div>
+
     <div class="product">
-        <h3>Arcoiris - Multipurpose Detergent</h3>
-        <img src="images/arcoiris.jpg" alt="Arcoiris Product">
-        <p>Powerful and versatile cleaning solution for home and commercial use.</p>
+      <h3>Arcoiris - Multipurpose Detergent</h3>
+      <img src="arcoiris.jpg" alt="Arcoiris Product">
+      <p>Powerful and versatile cleaning solution for home and commercial use.</p>
     </div>
-</section>
+  </div>
 
-<section id="contact">
-    <h2>Contact Us</h2>
-    <p>Interested in our products? Let’s connect.</p>
-    <p><a href="mailto:contacto@solqc.net">contacto@solqc.net</a></p>
-</section>
-
-<footer>
-    <p>© 2025 SOLQC. All rights reserved.</p>
-</footer>
-
+  <footer>
+    &copy; 2025 SOLQC. All rights reserved.
+  </footer>
 </body>
 </html>
