@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,79 +7,77 @@
   <title>SOLQC</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f7f7f7;
+      font-family: Arial, sans-serif;
     }
-    header {
-      background: #0d2b66;
-      padding: 20px;
-      text-align: center;
+    .header {
+      background-color: #0d2b5f;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
-    header img {
-      max-height: 80px;
+    .logo-container {
+      background-color: white;
+      padding: 5px 10px;
+      border-radius: 4px;
     }
-    nav {
-      background: #004080;
-      text-align: center;
-      padding: 10px 0;
+    .logo {
+      height: 45px;
     }
-    nav a {
+    .nav a {
       color: white;
-      margin: 0 20px;
+      margin-left: 20px;
       text-decoration: none;
       font-weight: bold;
     }
     .hero {
-      padding: 50px 20px;
       text-align: center;
-      background: #eee;
+      padding: 60px 20px;
+      background-color: #f1f1f1;
     }
     .hero h1 {
+      font-size: 32px;
       margin-bottom: 10px;
     }
-    .products {
-      padding: 30px 20px;
-      text-align: center;
+    .hero p {
+      font-size: 18px;
+      color: #555;
     }
-    .product {
-      margin: 20px auto;
-      max-width: 300px;
+    .hero button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+    .products {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .products h2 {
+      font-size: 28px;
     }
     .product img {
-      width: 100%;
-      max-width: 300px;
-      height: auto;
-      display: block;
-      margin: 0 auto 10px;
-    }
-    footer {
-      background: #0d2b66;
-      color: white;
-      text-align: center;
-      padding: 15px 0;
-      font-size: 14px;
+      width: 250px;
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="SOLQC Logo">
-  </header>
-
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">Products</a>
-    <a href="#">Contact</a>
-  </nav>
+  <div class="header">
+    <div class="logo-container">
+      <img src="logo.png" alt="SOLQC Logo" class="logo"/>
+    </div>
+    <div class="nav">
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
 
   <div class="hero">
     <h1>Delivering Quality with Purpose</h1>
     <p>High-quality essentials for retail and wholesale across the U.S. and Mexico.</p>
-    <a href="mailto:info@solqc.com">
-      <button style="padding: 10px 20px; font-size: 16px;">Contact Us</button>
-    </a>
+    <button>Contact Us</button>
   </div>
 
   <div class="products">
@@ -86,19 +85,13 @@
 
     <div class="product">
       <h3>Avocare - Avocado Oil</h3>
-      <img src="avocare.jpg" alt="Avocare Product">
-      <p>Premium avocado oil ideal for health-conscious consumers and foodservice.</p>
+      <img src="avocare.jpg" alt="Avocare Product"/>
     </div>
 
     <div class="product">
       <h3>Arcoiris - Multipurpose Detergent</h3>
-      <img src="arcoiris.jpg" alt="Arcoiris Product">
-      <p>Powerful and versatile cleaning solution for home and commercial use.</p>
+      <img src="arcoiris.jpg" alt="Arcoiris Product"/>
     </div>
   </div>
-
-  <footer>
-    &copy; 2025 SOLQC. All rights reserved.
-  </footer>
 </body>
 </html>
